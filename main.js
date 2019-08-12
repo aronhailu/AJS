@@ -25,6 +25,8 @@
 
 // console.log(carObj1);
 
+/******     COUNT DOWN USING JS TIMER FUNCTION    ************/
+
 var endDate = new Date("Sep 12, 2019 12:00:00").getTime();
 
 var timer = setInterval(function() {
@@ -59,3 +61,5 @@ var timer = setInterval(function() {
     }
     
 }, 1000);
+
+/*******    TAKING INPUT AND GIVING OUTPUT USING DOM MANIPULATION     ********/

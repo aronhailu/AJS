@@ -9,6 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
 }
 #timer {
     color: #fff;
@@ -22,6 +23,16 @@ body {
     text-align: center;
     font-size: 2rem;
     color: gray;
-    margin-top: 10rem;
-
+    margin-top: 7rem;
+}
+#input-output {
+    text-align: center;
+    font-size: 2rem;
+    color: gray;
+    margin-top: 5rem;
+}
+label {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 0.5rem 0 2rem;
 }
