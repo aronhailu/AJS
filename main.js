@@ -31,9 +31,8 @@ var endDate = new Date("Sep 12, 2019 12:00:00").getTime();
 
 var timer = setInterval(function() {
 
-    let now = new Date().getTime();
-    let t = endDate - now;
-    console.log(t);
+    var now = new Date().getTime();
+    var t = endDate - now;
     
     if (t >= 0) {
     
@@ -63,3 +62,20 @@ var timer = setInterval(function() {
 }, 1000);
 
 /*******    TAKING INPUT AND GIVING OUTPUT USING DOM MANIPULATION     ********/
+
+var addItem = function() {
+    var score = document.querySelector('#score').value;
+    if(score >= 90){
+        document.querySelector('#grade').value = 'A';
+    }else if(score >= 80){
+        document.querySelector('#grade').value = 'B';
+    }else if(score >= 60){
+        document.querySelector('#grade').value = 'C';
+    }else {
+        document.querySelector('#grade').value = 'D';
+    }
+}
+document.querySelector('#submit').addEventListener('click', addItem);
+document.addEventListener('keypress', function(event) {
+   addItem();
+});
